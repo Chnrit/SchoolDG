@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>고등학교 1학년 등급 계산기</title>
+    <link rel="stylesheet" type="text/css" href="https://chnrit.com/css/style.css">
+</head>
+<body>
+    <h1>
+        고등학교 1학년 등급 계산기
+    </h1>
+    <h2>
+        입력하기
+    </h2>
+
+    <details open>
+        <summary>등급 입력</summary>
+        <table border="1">
+        <form action="/" method="post">
+            <th></th>
+            <th>국어</th>
+            <th>수학</th>
+            <th>영어</th>
+            <th>통합사회</th>
+            <th>한국사</th>
+            <th>통합과학</th>
+            <tr><!-- 1번째 줄 -->
+                <td>등급</td>
+                <td>
+                    <input type="number" min="1" max="9" name="Korean" value = 5>
+                </td>
+                <td>
+                    <input type="number" min="1" max="9" name="Math" value = 5>
+                </td>
+                <td>
+                    <input type="number" min="1" max="9" name="English" value = 5>
+                </td>
+                <td>
+                    <input type="number" min="1" max="9" name="Soc" value = 5>
+                </td>
+                <td>
+                    <input type="number" min="1" max="9" name="His" value = 5>
+                </td>
+                <td>
+                    <input type="number" min="1" max="9" name="Sci" value = 5>
+                </td>
+            </tr>
+            <tr><!-- 2번째 줄 -->
+                <td>단위수</td>
+                <td>
+                    <input type="number" min="1" name="danKorean" value = 4>
+                </td>
+                <td>
+                    <input type="number" min="1" name="danMath" value = 4>
+                </td>
+                <td>
+                    <input type="number" min="1" name="danEnglish" value = 4>
+                </td>
+                <td>
+                    <input type="number" min="1" name="danSoc" value = 4>
+                </td>
+                <td>
+                    <input type="number" min="1" name="danHis" value = 3>
+                </td>
+                <td>
+                    <input type="number" min="1" name="danSci" value = 4>
+                </td>
+            </tr>
+
+
+            <input type="submit" value="전송하기">
+        </form>
+        </table>
+    </details>
+
+        <h2>
+            입력 결과
+        </h2>
+        <il>
+            <li>
+                국어: {{list[0]}}
+            </li>
+            <li>
+                수학: {{list[1]}}
+            </li>
+            <li>
+                영어: {{list[2]}}
+            </li>
+            <li>
+                통합사회: {{list[3]}}
+            </li>
+            <li>
+                한국사: {{list[4]}}
+            </li>
+            <li>
+                통합과학: {{list[5]}}
+            </li>
+        </il>
+        </p>
+        <p>
+            평균: {{roundedAvg}}
+        </p>
+   </form>
+
+   <hr>
+   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdm1U368rupFMVxn_hcYN_ihro_cDShVc4T7UDr4VP2QywEJw/viewform?embedded=true" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">로드 중…</iframe>
+</body>
+</html>
